@@ -1,0 +1,1 @@
+1. just some initial input to myThird.txt file.
