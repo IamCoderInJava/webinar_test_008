@@ -1,0 +1,23 @@
+Rules of creating remote GitHub repository linked to local git folder i.e. when first local git repository is created and later it is linked to GitHub (not vices versus i.e. first GitHub repository is created and later copied/cloned to local drive with git clone +SSH key command) are as follows below:
+
+Action on local drive:
+- create git repository on LOCAL drive within the folder where you are going to keep git projects;
+- go inside that repository by cd repositoryName command
+- initiate VCS git by running git init command inside that repository
+- add files (txt or Java or whatever) within that repository using vim fileName.fileExtention command and make your typings there
+- leave vim editor by :+wq command
+- run git add fileName command to move txt or java files to the staging index level
+- run long git commit (with additional message input) or short git commit -m "someMessage" (with message already included) commands to fix version saving procedure.
+
+Action on remote GitHub drive:
+All actions on remote/cloud drive are done after appropriate account is already created in GitHub.
+- create GitHub repository with the same name preferably as the one on local drive you want to link with GitHub
+
+Action on local drive (in terminal as hinted from the GitHub repository):
+- git remote add origin git@github.com:IamCoderInJava/webinar_test_008.git
+- git push -u origin main (or master as in my case)
+
+NOTE: use frequently git status and git log commands in terminal to see results of your activities performed.
+
+
+
